@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>LemIPC</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/material-design-lite/material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="../node_modules/material-design-lite/material.min.js"></script>
+    <link href="./css/pannel.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <section id="main" class="container-fluid">
+    <form id="form" onsubmit="return false;">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="number" id="nbTeam" min="1" max="9" value="5" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+        <label class="mdl-textfield__label" for="sample2">Nombre d'équipes...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="number" id="ppt" min="1" max="100000" value="750" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+        <label class="mdl-textfield__label" for="sample2">Nombre de joueurs par équipe...</label>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <button onclick="addInstance()  " class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">add</i>
+      </button>
+      <button onclick="fclean()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Clean
+      </button>
+    </form>
+    <section id="algos">
+      <div id="glob">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="number" id="globBaronne" min="0" max="100" value="25" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+          <label class="mdl-textfield__label" for="sample2">% Baronne...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="number" id="globMartinez" min="0" max="100" value="25" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+          <label class="mdl-textfield__label" for="sample2">% Martinez...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="number" id="globSam" min="0" max="100" value="25" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+          <label class="mdl-textfield__label" for="sample2">% Sam...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="js/pannel.js"></script>
+  </body>
+</html>

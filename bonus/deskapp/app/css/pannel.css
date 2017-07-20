@@ -1,0 +1,44 @@
+html,
+body {
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+
+#main {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  right: 0;
+}
+
+#form {
+  padding: 20px;
+  padding-top: 40px;
+  position: fixed;
+  height: 150px;
+  width: 800px;
+  background-color: white;
+  box-shadow: 0 0 100px black;
+}
+
+#algos {
+  position: fixed;
+  background: lightgrey;
+  top: 150px;
+  height: 400px;
+  width: 800px;
+}
+
+#glob {
+  width: 610px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+}
+
+#glob div {
+  width: 200px;
+  display: inline-block;
+}
