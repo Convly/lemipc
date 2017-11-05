@@ -1,4 +1,7 @@
 # lemipc
+
+[![Build Status](https://travis-ci.org/Nexus-Software/lemipc.svg?branch=master)](https://travis-ci.org/Nexus-Software/lemipc)
+
 By [Convly](https://github.com/Convly)
 
 A peek at Inter-Process Communication in Unix / C  —  Application in games
